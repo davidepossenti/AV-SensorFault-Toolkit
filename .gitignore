@@ -218,3 +218,23 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# ==========================================
+# CUSTOM SENSOR FAULT TOOLKIT RULES
+# ==========================================
+
+# Script di test interni e file spuri da non caricare
+smoke_test_*.py
+check_*.py
+=
+
+# Cartelle di dati e output generate dagli script
+data/
+CorruptedCamera_*/
+CorruptedLiDAR_*/
+CorruptedRadar_*/
+*_figures/
+*_smoke/
+*_check_all/
+*_check_random/
+*_corrupted/
