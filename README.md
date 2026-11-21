@@ -31,6 +31,63 @@ pip install -r requirements.txt
 ```
 ---
 
+## 🚀 Usage Examples
+
+The toolkit provides modular injectors for each sensor, executable directly from the command line.
+
+### 1. Injecting Faults
+
+**Camera:**
+```bash
+python -m camera.camera_injector \
+    --in-dir /path/to/boreas/camera \
+    --out-dir output/camera \
+    --fault environment:rain \
+    --fault hardware:dead_pixels \
+    --balance-ratio 0.5 \
+    --n-bursts 2 \
+    --burst-len-min 10 \
+    --burst-len-max 20 \
+    --seed 42
+```
+
+**LiDAR:**
+```bash
+python -m lidar.lidar_injector \
+    --in-dir /path/to/boreas/lidar \
+    --out-dir output/lidar \
+    --fault hardware:laser \
+    --fault synergistic:scanning_fog \
+    --balance-ratio 0.5 \
+    --seed 42
+```
+
+**Radar:**
+```bash
+python -m radar.radar_injector \
+    --in-dir /path/to/boreas/radar \
+    --out-dir output/radar \
+    --fault environment:multipath \
+    --fault hardware:lna \
+    --balance-ratio 0.5 \
+    --seed 42
+```
+
+*Note: Temporal injection dynamics can be finely tuned using flags such as `--first-n`, `--n-bursts`, `--burst-len-min`, `--burst-len-max`, `--keep-head`, and `--keep-tail`.*
+
+### 2. Visualization Tools
+
+To verify the injected degradations side-by-side with the original clean data, you can use the included visualization tools:
+
+```bash
+# LiDAR side-by-side visualizer
+python -m tools.visualize_lidar_faults \
+    --clean-dir /path/to/boreas/lidar \
+    --corrupted-dir output/lidar \
+    --max-figures 5
+```
+--- 
+
 ## Data
 
 The toolkit operates on the [Boreas dataset](https://www.boreas.utias.utoronto.ca).
