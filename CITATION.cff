@@ -1,0 +1,27 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite the associated paper."
+title: "AV Sensor Fault Injection Toolkit"
+authors:
+  - family-names: "Possenti"
+    given-names: "Davide"
+  - family-names: "Cianca"
+    given-names: "Daniele"
+  - family-names: "Arrigoni"
+    given-names: "Stefano"
+  - family-names: "Braghin"
+    given-names: "Francesco"
+preferred-citation:
+  type: article
+  title: "Exteroceptive Sensor Faults in Autonomous Vehicles: A Cross-Modal Taxonomy and Fault Injection Toolkit"
+  authors:
+    - family-names: "Possenti"
+      given-names: "Davide"
+    - family-names: "Cianca"
+      given-names: "Daniele"
+    - family-names: "Arrigoni"
+      given-names: "Stefano"
+    - family-names: "Braghin"
+      given-names: "Francesco"
+  journal: "arXiv preprint arXiv:2611.31667"
+  year: 2026
+  url: "https://arxiv.org/abs/2611.31667"
