@@ -1,5 +1,7 @@
 # AV Sensor Fault Injection Toolkit 🚗⚡
 
+[![arXiv](https://img.shields.io/badge/arXiv-2611.31667-b31b1b.svg)](https://arxiv.org/abs/2611.31667)
+
 An open-source fault injection framework for autonomous vehicle (AV) perception systems. This toolkit operationalizes a cross-modal taxonomy of exteroceptive sensor faults, allowing researchers to systematically inject phenomenological, symptom-level degradations into time-stamped **Camera**, **LiDAR**, and **Radar** datasets. 
 
 It is designed to generate controlled testbeds and fault-annotated datasets for evaluating robust multi-sensor fusion and developing Fault Detection and Diagnosis (FDD) architectures.
@@ -93,6 +95,25 @@ python -m tools.visualize_lidar_faults \
 The toolkit operates on the [Boreas dataset](https://www.boreas.utias.utoronto.ca).
 Data are **not** included in this repository; download the sequences you need and
 check the dataset license. Another dataset only requires a loader for its format.
+
+
+## 📝 Citation
+
+If you find this taxonomy or toolkit useful in your research, please consider citing our paper:
+
+```bibtex
+@misc{possenti2026exteroceptivesensorfaultsautonomous,
+      title={Exteroceptive Sensor Faults in Autonomous Vehicles: A Cross-Modal Taxonomy and Fault Injection Toolkit}, 
+      author={Davide Possenti and Daniele Cianca and Stefano Arrigoni and Francesco Braghin},
+      year={2026},
+      eprint={2611.31667},
+      archivePrefix={arXiv},
+      primaryClass={cs.RO},
+      url={[https://arxiv.org/abs/2611.31667](https://arxiv.org/abs/2611.31667)}, 
+}
+```
+
+---
 
 ---
 ## ⚖️ License
