@@ -99,7 +99,7 @@ check the dataset license. Another dataset only requires a loader for its format
 
 ## 📝 Citation
 
-If you find this taxonomy or toolkit useful in your research, please consider citing our paper:
+The full paper is available on [arXiv](https://arxiv.org/abs/2611.31667). If you find this taxonomy or toolkit useful in your research, please consider citing:
 
 ```bibtex
 @misc{possenti2026exteroceptivesensorfaultsautonomous,
